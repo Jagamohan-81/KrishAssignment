@@ -185,7 +185,7 @@ const PastAppointmentsTab = (props) => {
       <Masonry columns={2} spacing={2}>
         
         <Card style={{
-            background:"transparent"
+            background:"white"
         }}>
             <CardContent>
                 <div className='dashboard-profilecard'>
