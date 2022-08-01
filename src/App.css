@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+.appTab{
+  height:20px;
+  font-size:12px;
+}
+.deleteButton:hover{
+  color:red;
+}
