@@ -244,7 +244,7 @@ const PastAppointmentsTab = (props) => {
                 </div>
 
                 <div className="dashboard-notescard-notecontainer">
-                    <textarea />
+                    <textarea style={{background:'#efefef'}}/>
                     <Button className="dashboard-notescard-notecontainer-savebtn" varient="contained" color="primary">
                         save note
                     </Button>
