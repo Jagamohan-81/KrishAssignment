@@ -262,9 +262,9 @@ const PastAppointmentsTab = (props) => {
             <CardContent>
                 <TabsUnstyled  value={selectedAptTab} onChange={(ev, selectedTab) => setAptTab(selectedTab)}>
                     <TabsList style={{backgroundColor:"#efefef"}}>
-                        <button className='appTab' value={'upcoming'}>Upcoming Appoitnment</button>
-                        <button className='appTab' value={'past'}>Past Appointments</button>
-                        <button  className='appTab' value={'records'}>Medical Records</button>
+                        <Tab className='appTab' value={'upcoming'}><button>Upcoming Appoitnment</button></Tab>
+                        <Tab className='appTab' value={'past'}><button>Past Appointments</button></Tab>
+                        <Tab  className='appTab' value={'records'}><button>Medical Records</button></Tab>
                     </TabsList>
                 </TabsUnstyled>
 
