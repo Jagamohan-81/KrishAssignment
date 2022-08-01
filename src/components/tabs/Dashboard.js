@@ -169,7 +169,7 @@ const PastAppointmentsTab = (props) => {
                 <Typography color="text.primary">Diane Cooper</Typography>
             </Breadcrumbs>
             </div>
-
+            <input type='text' placeholder='search' />
             <Button varient='outlined'>
                 <Print onClick={()=>{window.print()}}/>
             </Button>
