@@ -36,7 +36,7 @@
     transform: rotate(360deg);
   }
 }
-.appTab{
+.appTab button{
   height:20px;
   font-size:12px;
   color:black;
