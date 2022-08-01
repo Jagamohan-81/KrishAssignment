@@ -289,7 +289,7 @@ const PastAppointmentsTab = (props) => {
                                 <FileCopy />
                                 <p className="dashboard-filecard-filelist-entry-name">{index} {ele}</p>
                                 <Delete className='deleteButton'/>
-                                <p>{Math.ceil(Math.random(100)*300)}kb</p>
+                                <p>{102+index)}kb</p>
                             </div>
                         </div>
                     )
