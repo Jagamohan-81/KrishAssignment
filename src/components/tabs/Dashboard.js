@@ -289,7 +289,7 @@ const PastAppointmentsTab = (props) => {
                                 <FileCopy />
                                 <p className="dashboard-filecard-filelist-entry-name">{index} {ele}</p>
                                 <Delete className='deleteButton'/>
-                                <p>{102+{index}kb</p>
+                                <p>104kb</p>
                             </div>
                         </div>
                     )
