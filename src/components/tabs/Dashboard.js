@@ -171,7 +171,7 @@ const PastAppointmentsTab = (props) => {
             </div>
 
             <Button varient='outlined'>
-                <Print />
+                <Print onClick={()=>{window.print()}}/>
             </Button>
 
             &nbsp;&nbsp;
