@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Masonry from '@mui/lab/Masonry';
 import { Avatar, Breadcrumbs, Button, Card, CardContent, IconButton, Link, TextField, Typography } from '@mui/material';
-import {Print, Edit, Person, CreateNewFolder, FileCopy} from '@mui/icons-material'
+import {Print, Edit, Person, CreateNewFolder, FileCopy,Delete} from '@mui/icons-material'
 import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
 import '../../styles/dashboard.scss';
 
@@ -262,9 +262,9 @@ const PastAppointmentsTab = (props) => {
             <CardContent>
                 <TabsUnstyled  value={selectedAptTab} onChange={(ev, selectedTab) => setAptTab(selectedTab)}>
                     <TabsList style={{backgroundColor:"#efefef"}}>
-                        <Tab value={'upcoming'}>Upcoming Appoitnment</Tab>
-                        <Tab value={'past'}>Past Appointments</Tab>
-                        <Tab value={'records'}>Medical Records</Tab>
+                        <Tab className='appTab' value={'upcoming'}>Upcoming Appoitnment</Tab>
+                        <Tab className='appTab' value={'past'}>Past Appointments</Tab>
+                        <Tab  className='appTab' value={'records'}>Medical Records</Tab>
                     </TabsList>
                 </TabsUnstyled>
 
@@ -287,8 +287,9 @@ const PastAppointmentsTab = (props) => {
                         <div key={index} className="dashboard-filecard-filelist">
                             <div className="dashboard-filecard-filelist-entry">
                                 <FileCopy />
-                                <p className="dashboard-filecard-filelist-entry-name">{ele}</p>
-                                <p>{Math.ceil(Math.random()*300)}kb</p>
+                                <p className="dashboard-filecard-filelist-entry-name">{index} {ele}</p>
+                                <Delete className='deleteButton'/>
+                                <p>{Math.ceil(Math.random(100)*300)}kb</p>
                             </div>
                         </div>
                     )
